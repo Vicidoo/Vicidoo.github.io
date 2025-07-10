@@ -2699,6 +2699,7 @@ use.stop-animation {
 }
 #sidebar {
   position: static;
+  overflow: scroll;
   width: 15rem;
   top: 0;
   bottom: 0;
@@ -2737,6 +2738,7 @@ use.stop-animation {
   padding: 4.6875rem 0 2rem;
   width: 100%;
   overflow: hidden;
+  min-height: 100vh;
 }
 .panels .inner {
   margin-top: 2.5rem;
@@ -2973,7 +2975,7 @@ use.stop-animation {
   width: 15rem;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: sticky;
   bottom: 0.125rem;
 }
 #quick li {
