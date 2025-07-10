@@ -3,29 +3,14 @@
     <id>https://vicidoo.org</id>
     <title>Vicidoo</title>
     <link href="https://vicidoo.org" />
-    <updated>2025-07-10T14:42:51.842Z</updated>
+    <updated>2025-07-10T14:43:36.245Z</updated>
     <entry>
         <id>https://vicidoo.org/2025/07/10/2025-7-10/</id>
         <title>2025-7-10</title>
         <link rel="alternate" href="https://vicidoo.org/2025/07/10/2025-7-10/"/>
-        <content type="html">&lt;h2 id=&#34;HEAD&#34;&gt;&lt;a href=&#34;#HEAD&#34; class=&#34;headerlink&#34; title=&#34;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。猪这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。奇迹了  &#34;&gt;&lt;/a&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;br&gt;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。&lt;del&gt;猪&lt;/del&gt;&lt;br&gt;&lt;del&gt;这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原&lt;/del&gt;&lt;br&gt;随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。&lt;br&gt;在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。&lt;br&gt;回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。&lt;del&gt;奇迹了&lt;/del&gt;  &lt;/h2&gt;&lt;h1 id=&#34;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。&#34;&gt;&lt;a href=&#34;#hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。&#34; class=&#34;headerlink&#34; title=&#34;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &#34;&gt;&lt;/a&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &lt;/h1&gt;&lt;h2 id=&#34;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个-rm-rf-了。猪这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。在使用hyprland-wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把-目录排除在外的，但是确实是给我恢复了。奇迹了&#34;&gt;&lt;a href=&#34;#前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个-rm-rf-了。猪这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。在使用hyprland-wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把-目录排除在外的，但是确实是给我恢复了。奇迹了&#34; class=&#34;headerlink&#34; title=&#34;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf &amp;#x2F;了。猪这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把&amp;#x2F;目录排除在外的，但是确实是给我恢复了。奇迹了 &#34;&gt;&lt;/a&gt;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf &lt;del&gt;&amp;#x2F;了。&lt;del&gt;猪&lt;/del&gt;&lt;br&gt;&lt;del&gt;这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原&lt;/del&gt;&lt;br&gt;随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。&lt;br&gt;在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。&lt;br&gt;回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把&lt;/del&gt;&amp;#x2F;目录排除在外的，但是确实是给我恢复了。&lt;del&gt;奇迹了&lt;/del&gt; &lt;/h2&gt;&lt;p&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;a82527a88af42d638aacc5687566bdd02a9cdbd5&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+        <content type="html">&lt;h2 id=&#34;HEAD&#34;&gt;&lt;a href=&#34;#HEAD&#34; class=&#34;headerlink&#34; title=&#34;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。猪这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。奇迹了  &#34;&gt;&lt;/a&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;br&gt;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。&lt;del&gt;猪&lt;/del&gt;&lt;br&gt;&lt;del&gt;这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原&lt;/del&gt;&lt;br&gt;随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。&lt;br&gt;在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。&lt;br&gt;回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。&lt;del&gt;奇迹了&lt;/del&gt;  &lt;/h2&gt;&lt;p&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &lt;/p&gt;
 </content>
-        <updated>2025-07-10T14:42:51.842Z</updated>
+        <updated>2025-07-10T14:43:36.245Z</updated>
     </entry>
     <entry>
         <id>https://vicidoo.org/2025/07/10/hello-world/</id>
@@ -33,6 +18,6 @@
         <link rel="alternate" href="https://vicidoo.org/2025/07/10/hello-world/"/>
         <content type="html">&lt;p&gt;欢迎来到薇茜朵（Vicidoo）的小窝！&lt;br&gt;这里是建站第一篇文章。&lt;br&gt;我是薇茜朵，Vicidoo，好久前了，忘记这个名字是怎么取来的了。&lt;br&gt;日后大概随心意写一点文章。&lt;del&gt;虽然我也不知道会是什么文章就是了.&lt;/del&gt;&lt;br&gt;&lt;del&gt;关注我，教我建站。&lt;/del&gt;&lt;/p&gt;
 </content>
-        <updated>2025-07-10T14:42:51.842Z</updated>
+        <updated>2025-07-10T14:43:36.245Z</updated>
     </entry>
 </feed>
