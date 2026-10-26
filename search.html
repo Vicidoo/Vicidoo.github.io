@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>搜索 · 薇茜朵的小窝</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 8vh 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+    background: #16171b; color: #e8e6e3;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 600; margin: 0 0 18px; letter-spacing: .02em; }
+  h1 a { color: inherit; text-decoration: none; }
+  input {
+    width: 100%; padding: 14px 16px; font-size: 16px;
+    background: #1e1f24; color: #e8e6e3;
+    border: 1px solid #2e3038; border-radius: 10px; outline: none;
+  }
+  input:focus { border-color: #4a4d59; }
+  .hint { color: #8b8d96; font-size: 13px; margin: 10px 2px 22px; }
+  .item { padding: 14px 0; border-bottom: 1px solid #24262c; }
+  .item a { color: #e8e6e3; text-decoration: none; font-size: 16px; }
+  .item a:hover { color: #fff; text-decoration: underline; }
+  .meta { color: #8b8d96; font-size: 12px; margin-top: 6px; }
+  mark { background: #3b3a20; color: #ffe98a; padding: 0 2px; border-radius: 2px; }
+  .empty { color: #8b8d96; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><a href="/">薇茜朵的小窝</a> · 搜索</h1>
+  <input id="q" type="search" placeholder="输入关键词，回车或直接输入都会搜" autofocus>
+  <div class="hint" id="hint">站内共 <span id="total">…</span> 篇</div>
+  <div id="list"></div>
+</div>
+<script>
+(async function () {
+  var input = document.getElementById('q');
+  var list = document.getElementById('list');
+  var hint = document.getElementById('hint');
+  var total = document.getElementById('total');
+  var data;
+  try {
+    data = await (await fetch('/search.json')).json();
+  } catch (e) {
+    hint.textContent = '索引加载失败';
+    return;
+  }
+  total.textContent = data.count;
+  var posts = data.posts || [];
+
+  function esc(s) { return s.replace(/[&<>]/g, function (c) { return ({'&':'&amp;','<':'&lt;','>':'&gt;'})[c]; }); }
+  function snippet(text, kw) {
+    if (!kw) return esc(text.slice(0, 110));
+    var i = text.toLowerCase().indexOf(kw);
+    if (i < 0) return esc(text.slice(0, 110));
+    var s = Math.max(0, i - 40);
+    return (s > 0 ? '…' : '') + esc(text.slice(s, s + 120)).replace(new RegExp(esc(kw).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), function (m) { return '<mark>' + m + '</mark>'; }) + '…';
+  }
+
+  function render(kw) {
+    var q = kw.trim().toLowerCase();
+    if (!q) { list.innerHTML = ''; hint.style.display = ''; return; }
+    hint.style.display = 'none';
+    var hits = posts.filter(function (p) {
+      return (p.title + ' ' + p.text + ' ' + (p.tags || []).join(' ')).toLowerCase().indexOf(q) >= 0;
+    });
+    if (!hits.length) { list.innerHTML = '<div class="empty">没有匹配的内容</div>'; return; }
+    list.innerHTML = hits.map(function (p) {
+      return '<div class="item"><a href="' + p.url + '">' + esc(p.title) + '</a>' +
+             '<div class="meta">' + p.date + (p.tags && p.tags.length ? ' · ' + p.tags.join(' / ') : '') + '</div>' +
+             '<div class="meta">' + snippet(p.text, q) + '</div></div>';
+    }).join('');
+  }
+
+  var timer;
+  input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(function () { render(input.value); }, 120); });
+  var m = new URLSearchParams(location.search).get('q');
+  if (m) { input.value = m; render(m); }
+})();
+</script>
+</body>
+</html>
