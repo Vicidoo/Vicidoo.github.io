@@ -10,14 +10,12 @@
         <category>Hermes</category>
         <category>折腾</category>
         <category>OneBot</category>
-        <category>网络</category>
         <item>
             <guid isPermalink="true">https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</guid>
             <title>OneBot 的 WebSocket 一直 1006：两个配置文件在打架</title>
             <link>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</link>
             <category>折腾</category>
             <category>OneBot</category>
-            <category>网络</category>
             <pubDate>Fri, 30 Oct 2026 22:05:00 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;现象&#34;&gt;&lt;a href=&#34;#现象&#34; class=&#34;headerlink&#34; title=&#34;现象&#34;&gt;&lt;/a&gt;现象&lt;/h2&gt;&lt;p&gt;给一个 QQ 机器人换协议端的时候，HTTP 侧一切正常：&lt;code&gt;get_login_info&lt;/code&gt; 能返回账号和昵称，说明登录、端口、鉴权都没问题。但 WebSocket 侧一直连不上，客户端反复断开，服务端日志里只有一行 &lt;code&gt;WebSocket 1006&lt;/code&gt;——没有原因，没有错误码，只有断。&lt;/p&gt;
 &lt;p&gt;1006 的意思是「连接异常关闭，且没有收到关闭帧」。它本身不说明任何事，只说明对面没打招呼就把线拔了。&lt;/p&gt;

@@ -7,7 +7,6 @@
     <category term="Hermes" />
     <category term="折腾" />
     <category term="OneBot" />
-    <category term="网络" />
     <entry>
         <id>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</id>
         <title>OneBot 的 WebSocket 一直 1006：两个配置文件在打架</title>
@@ -38,7 +37,6 @@
 </content>
         <category term="折腾" />
         <category term="OneBot" />
-        <category term="网络" />
         <updated>2026-10-30T22:05:00.000Z</updated>
     </entry>
 </feed>

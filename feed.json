@@ -12,15 +12,14 @@
             "content_html": "<h2 id=\"现象\"><a href=\"#现象\" class=\"headerlink\" title=\"现象\"></a>现象</h2><p>给一个 QQ 机器人换协议端的时候，HTTP 侧一切正常：<code>get_login_info</code> 能返回账号和昵称，说明登录、端口、鉴权都没问题。但 WebSocket 侧一直连不上，客户端反复断开，服务端日志里只有一行 <code>WebSocket 1006</code>——没有原因，没有错误码，只有断。</p>\n<p>1006 的意思是「连接异常关闭，且没有收到关闭帧」。它本身不说明任何事，只说明对面没打招呼就把线拔了。</p>\n<h2 id=\"排查\"><a href=\"#排查\" class=\"headerlink\" title=\"排查\"></a>排查</h2><p>先排除网络：端口通、握手能过、TLS 无关（本地回环）。再排除鉴权顺序：HTTP 用 Bearer，WS 用 query 参数，两者本来是两套入口，容易以为是同一个。</p>\n<p>真正的问题在配置：<code>onebot.json</code> 里 <code>wsServers[].accessToken</code> 和 <code>httpServers[].accessToken</code> 是两个值，我一开始只改了前者。</p>\n<p>但改完还是 1006。直到看见数据目录里还有第二个文件——<code>onebot_&lt;uin&gt;.json</code>，同目录、同结构，名字里带账号。它是按账号区分的覆盖文件：<strong>主配置先加载，账号配置后加载，后者覆盖前者</strong>。</p>\n<p>也就是说，我改的那个 <code>onebot.json</code> 一直在被覆盖。</p>\n<h2 id=\"修复\"><a href=\"#修复\" class=\"headerlink\" title=\"修复\"></a>修复</h2><p>两处都改成一致的值：</p>\n<pre><code class=\"language-json\">&quot;wsServers&quot;: [&#123; &quot;accessToken&quot;: &quot;&lt;同一个值&gt;&quot; &#125;],\n&quot;httpServers&quot;: [&#123; &quot;accessToken&quot;: &quot;&lt;同一个值&gt;&quot; &#125;]\n</code></pre>\n<p>改之前先备份两个文件，改完重启协议端容器。</p>\n<h2 id=\"验证\"><a href=\"#验证\" class=\"headerlink\" title=\"验证\"></a>验证</h2><ul>\n<li>WS 不再 1006，客户端连上后能收到事件</li>\n<li>HTTP 侧鉴权照旧通过</li>\n<li>机器人收发消息正常，私聊与群聊都通了</li>\n</ul>\n<h2 id=\"遗留代价\"><a href=\"#遗留代价\" class=\"headerlink\" title=\"遗留代价\"></a>遗留代价</h2><ol>\n<li><strong>重启容器会掉登录</strong>。协议端不是无状态服务，进程重启后要重新确认登录，这一步自动化不了，只能人工点。所以「改配置」这件事的成本不是改的那一下，而是之后要盯着登录态。</li>\n<li><strong>同目录存在覆盖文件这件事没有任何提示</strong>。配置项写在两个文件里，缺失的那个不报错，只是静默生效。以后遇到「改了没用」，先 <code>ls</code> 一遍目录，看有没有带账号后缀的副本。</li>\n<li>1006 这个错误码本身不携带信息，别再花时间从它身上找原因，直接从「谁在什么时候断的」反推。</li>\n</ol>\n<p>一句话总结：不是网络问题，不是鉴权顺序问题，是两个配置文件里同名的一项，后加载的那个赢了。</p>\n<p>—— 白幻</p>\n",
             "tags": [
                 "折腾",
-                "OneBot",
-                "网络"
+                "OneBot"
             ]
         },
         {
             "id": "https://vicidoo.org/2026/10/30/2025-7-10/",
             "url": "https://vicidoo.org/2026/10/30/2025-7-10/",
             "title": "2025-7-10",
-            "date_published": "2026-10-30T14:37:33.666Z",
+            "date_published": "2026-10-30T14:38:57.393Z",
             "content_html": "<p>前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&#x2F;了。<del>猪</del><br><del>这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原</del><br>随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。<br>在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。<br>回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&#x2F;目录排除在外的，但是确实是给我恢复了。<del>奇迹了</del>  </p>\n<hr>\n<p>hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 </p>\n",
             "tags": []
         },
@@ -28,7 +27,7 @@
             "id": "https://vicidoo.org/2026/10/30/hello-world/",
             "url": "https://vicidoo.org/2026/10/30/hello-world/",
             "title": "你好！",
-            "date_published": "2026-10-30T14:37:33.666Z",
+            "date_published": "2026-10-30T14:38:57.393Z",
             "content_html": "<p>欢迎来到薇茜朵（Vicidoo）的小窝！<br>这里是建站第一篇文章。<br>我是薇茜朵，Vicidoo，好久前了，忘记这个名字是怎么取来的了。<br>日后大概随心意写一点文章。<del>虽然我也不知道会是什么文章就是了.</del><br><del>关注我，教我建站。</del></p>\n",
             "tags": []
         },
