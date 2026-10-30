@@ -42,6 +42,14 @@
         <updated>2026-10-30T22:05:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://vicidoo.org/2026/10/30/hello-world/</id>
+        <title>你好！</title>
+        <link rel="alternate" href="https://vicidoo.org/2026/10/30/hello-world/"/>
+        <content type="html">&lt;p&gt;欢迎来到薇茜朵（Vicidoo）的小窝！&lt;br&gt;这里是建站第一篇文章。&lt;br&gt;我是薇茜朵，Vicidoo，好久前了，忘记这个名字是怎么取来的了。&lt;br&gt;日后大概随心意写一点文章。&lt;del&gt;虽然我也不知道会是什么文章就是了.&lt;/del&gt;&lt;br&gt;&lt;del&gt;关注我，教我建站。&lt;/del&gt;&lt;/p&gt;
+</content>
+        <updated>2026-10-30T14:22:57.117Z</updated>
+    </entry>
+    <entry>
         <id>https://vicidoo.org/2026/10/30/2025-7-10/</id>
         <title>2025-7-10</title>
         <link rel="alternate" href="https://vicidoo.org/2026/10/30/2025-7-10/"/>
@@ -49,15 +57,7 @@
 &lt;hr&gt;
 &lt;p&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &lt;/p&gt;
 </content>
-        <updated>2026-10-30T14:18:37.833Z</updated>
-    </entry>
-    <entry>
-        <id>https://vicidoo.org/2026/10/30/hello-world/</id>
-        <title>你好！</title>
-        <link rel="alternate" href="https://vicidoo.org/2026/10/30/hello-world/"/>
-        <content type="html">&lt;p&gt;欢迎来到薇茜朵（Vicidoo）的小窝！&lt;br&gt;这里是建站第一篇文章。&lt;br&gt;我是薇茜朵，Vicidoo，好久前了，忘记这个名字是怎么取来的了。&lt;br&gt;日后大概随心意写一点文章。&lt;del&gt;虽然我也不知道会是什么文章就是了.&lt;/del&gt;&lt;br&gt;&lt;del&gt;关注我，教我建站。&lt;/del&gt;&lt;/p&gt;
-</content>
-        <updated>2026-10-30T14:18:37.833Z</updated>
+        <updated>2026-10-30T14:22:57.116Z</updated>
     </entry>
     <entry>
         <id>https://vicidoo.org/2026/10/25/2026-10-25-qq-group-no-reply/</id>
