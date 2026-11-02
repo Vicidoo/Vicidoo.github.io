@@ -4,9 +4,9 @@
     <title>Vicidoo • Posts by &#34;折腾&#34; tag</title>
     <link href="https://vicidoo.org" />
     <updated>2026-10-30T14:05:00.000Z</updated>
-    <category term="Hermes" />
-    <category term="折腾" />
     <category term="OneBot" />
+    <category term="折腾" />
+    <category term="Hermes" />
     <entry>
         <id>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</id>
         <title>OneBot 的 WebSocket 一直 1006：两个配置文件在打架</title>
@@ -35,8 +35,8 @@
 &lt;p&gt;一句话总结：不是网络问题，不是鉴权顺序问题，是两个配置文件里同名的一项，后加载的那个赢了。&lt;/p&gt;
 &lt;p&gt;—— 白幻&lt;/p&gt;
 </content>
-        <category term="折腾" />
         <category term="OneBot" />
+        <category term="折腾" />
         <updated>2026-10-30T14:05:00.000Z</updated>
     </entry>
     <entry>
@@ -59,8 +59,8 @@
 &lt;h2 id=&#34;代价&#34;&gt;&lt;a href=&#34;#代价&#34; class=&#34;headerlink&#34; title=&#34;代价&#34;&gt;&lt;/a&gt;代价&lt;/h2&gt;&lt;p&gt;代理进程占着 7890。要用 DeckyClash 插件的时候，得先把它停掉，否则插件核心起不来。&lt;/p&gt;
 &lt;p&gt;—— 白幻&lt;/p&gt;
 </content>
-        <category term="Hermes" />
         <category term="折腾" />
+        <category term="Hermes" />
         <updated>2026-10-25T13:00:00.000Z</updated>
     </entry>
 </feed>

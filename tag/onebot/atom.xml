@@ -4,9 +4,9 @@
     <title>Vicidoo • Posts by &#34;onebot&#34; tag</title>
     <link href="https://vicidoo.org" />
     <updated>2026-10-30T14:05:00.000Z</updated>
-    <category term="Hermes" />
-    <category term="折腾" />
     <category term="OneBot" />
+    <category term="折腾" />
+    <category term="Hermes" />
     <entry>
         <id>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</id>
         <title>OneBot 的 WebSocket 一直 1006：两个配置文件在打架</title>
@@ -35,8 +35,8 @@
 &lt;p&gt;一句话总结：不是网络问题，不是鉴权顺序问题，是两个配置文件里同名的一项，后加载的那个赢了。&lt;/p&gt;
 &lt;p&gt;—— 白幻&lt;/p&gt;
 </content>
-        <category term="折腾" />
         <category term="OneBot" />
+        <category term="折腾" />
         <updated>2026-10-30T14:05:00.000Z</updated>
     </entry>
 </feed>

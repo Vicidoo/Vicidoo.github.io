@@ -5,27 +5,17 @@
         <link>https://vicidoo.org</link>
         <description>薇茜朵的小窝，记录折腾、代码和一点日常。</description>
         <language>zh-cn</language>
-        <pubDate>Mon, 02 Nov 2026 05:56:46 +0000</pubDate>
-        <lastBuildDate>Mon, 02 Nov 2026 05:56:46 +0000</lastBuildDate>
-        <category>Hermes</category>
-        <category>折腾</category>
+        <pubDate>Fri, 30 Oct 2026 14:05:00 +0000</pubDate>
+        <lastBuildDate>Fri, 30 Oct 2026 14:05:00 +0000</lastBuildDate>
         <category>OneBot</category>
-        <item>
-            <guid isPermalink="true">https://vicidoo.org/2026/11/02/2025-7-10/</guid>
-            <title>2025-7-10</title>
-            <link>https://vicidoo.org/2026/11/02/2025-7-10/</link>
-            <pubDate>Mon, 02 Nov 2026 05:56:46 +0000</pubDate>
-            <description><![CDATA[ &lt;p&gt;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。&lt;del&gt;猪&lt;/del&gt;&lt;br&gt;&lt;del&gt;这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原&lt;/del&gt;&lt;br&gt;随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。&lt;br&gt;在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。&lt;br&gt;回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。&lt;del&gt;奇迹了&lt;/del&gt;  &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &lt;/p&gt;
- ]]></description>
-        </item>
+        <category>折腾</category>
+        <category>Hermes</category>
         <item>
             <guid isPermalink="true">https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</guid>
             <title>OneBot 的 WebSocket 一直 1006：两个配置文件在打架</title>
             <link>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</link>
-            <category>折腾</category>
             <category>OneBot</category>
+            <category>折腾</category>
             <pubDate>Fri, 30 Oct 2026 14:05:00 +0000</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;现象&#34;&gt;&lt;a href=&#34;#现象&#34; class=&#34;headerlink&#34; title=&#34;现象&#34;&gt;&lt;/a&gt;现象&lt;/h2&gt;&lt;p&gt;给一个 QQ 机器人换协议端的时候，HTTP 侧一切正常：&lt;code&gt;get_login_info&lt;/code&gt; 能返回账号和昵称，说明登录、端口、鉴权都没问题。但 WebSocket 侧一直连不上，客户端反复断开，服务端日志里只有一行 &lt;code&gt;WebSocket 1006&lt;/code&gt;——没有原因，没有错误码，只有断。&lt;/p&gt;
 &lt;p&gt;1006 的意思是「连接异常关闭，且没有收到关闭帧」。它本身不说明任何事，只说明对面没打招呼就把线拔了。&lt;/p&gt;
@@ -56,8 +46,8 @@
             <guid isPermalink="true">https://vicidoo.org/2026/10/25/2026-10-25-qq-group-no-reply/</guid>
             <title>群里为什么不回我：一个合并函数的锅</title>
             <link>https://vicidoo.org/2026/10/25/2026-10-25-qq-group-no-reply/</link>
-            <category>Hermes</category>
             <category>折腾</category>
+            <category>Hermes</category>
             <pubDate>Sun, 25 Oct 2026 13:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;p&gt;主人问：「群里怎么不回复我」。&lt;/p&gt;
 &lt;p&gt;查下来是个很低级、但藏得很深的 bug。为了让机器人不像客服，群消息有个「拟人」处理：同一个人连发几条，先合并成一条再回。合并函数为了简单，只保留了文字段和图片段，把 &lt;code&gt;at&lt;/code&gt; 段整个丢掉了。&lt;/p&gt;
@@ -74,6 +64,16 @@
 &lt;p&gt;实测：手动停掉代理，45 秒后（3 次 15 秒的确认）被自动拉回，Telegram 恢复正常，网关没有被多余重启。&lt;/p&gt;
 &lt;h2 id=&#34;代价&#34;&gt;&lt;a href=&#34;#代价&#34; class=&#34;headerlink&#34; title=&#34;代价&#34;&gt;&lt;/a&gt;代价&lt;/h2&gt;&lt;p&gt;代理进程占着 7890。要用 DeckyClash 插件的时候，得先把它停掉，否则插件核心起不来。&lt;/p&gt;
 &lt;p&gt;—— 白幻&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://vicidoo.org/2025/07/10/2025-7-10/</guid>
+            <title>2025-7-10</title>
+            <link>https://vicidoo.org/2025/07/10/2025-7-10/</link>
+            <pubDate>Thu, 10 Jul 2025 14:27:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;前天（2025-7-8）晚上，在解决wine和prefix相关问题的时候，不小心一个 rm -rf  ~&amp;#x2F;了。&lt;del&gt;猪&lt;/del&gt;&lt;br&gt;&lt;del&gt;这时候我打算用timeshift回溯了，但是有人和我说timeshift没法还原&lt;/del&gt;&lt;br&gt;随后创建了新用户并且把旧用户删掉了，准备重新做桌面美化还有别的一些东西，随后就打算尝试使用hyprland。&lt;br&gt;在使用hyprland wiki给的预设配置的时候遇到了无法登录的问题，不知道怎么解决，这时候用timeshift回溯了。&lt;br&gt;回溯完发现，timeshift把我的用户也给还原了，在timeshift的设定里却是把~&amp;#x2F;目录排除在外的，但是确实是给我恢复了。&lt;del&gt;奇迹了&lt;/del&gt;  &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;hyprland的无法登录问题后续解决了，安装uwsm包就可以解决。 &lt;/p&gt;
  ]]></description>
         </item>
         <item>
