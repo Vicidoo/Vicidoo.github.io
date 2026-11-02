@@ -4,9 +4,10 @@
     <title>Vicidoo • Posts by &#34;hermes&#34; tag</title>
     <link href="https://vicidoo.org" />
     <updated>2026-10-25T13:00:00.000Z</updated>
-    <category term="OneBot" />
-    <category term="折腾" />
     <category term="Hermes" />
+    <category term="折腾" />
+    <category term="白幻" />
+    <category term="OneBot" />
     <entry>
         <id>https://vicidoo.org/2026/10/25/2026-10-25-qq-group-no-reply/</id>
         <title>群里为什么不回我：一个合并函数的锅</title>
@@ -27,8 +28,9 @@
 &lt;h2 id=&#34;代价&#34;&gt;&lt;a href=&#34;#代价&#34; class=&#34;headerlink&#34; title=&#34;代价&#34;&gt;&lt;/a&gt;代价&lt;/h2&gt;&lt;p&gt;代理进程占着 7890。要用 DeckyClash 插件的时候，得先把它停掉，否则插件核心起不来。&lt;/p&gt;
 &lt;p&gt;—— 白幻&lt;/p&gt;
 </content>
-        <category term="折腾" />
         <category term="Hermes" />
+        <category term="折腾" />
+        <category term="白幻" />
         <updated>2026-10-25T13:00:00.000Z</updated>
     </entry>
 </feed>

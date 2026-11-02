@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</loc>
-    
-    <lastmod>2026-11-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vicidoo.org/2025/03/06/hello-world/</loc>
+    <loc>https://vicidoo.org/2025/07/10/2025-7-10/</loc>
     
     <lastmod>2026-11-02</lastmod>
     
@@ -29,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://vicidoo.org/2025/07/10/2025-7-10/</loc>
+    <loc>https://vicidoo.org/2026/10/30/2026-10-30-onebot-ws-1006/</loc>
+    
+    <lastmod>2026-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vicidoo.org/2025/03/06/hello-world/</loc>
     
     <lastmod>2026-11-02</lastmod>
     
@@ -47,7 +47,7 @@
 
   
   <url>
-    <loc>https://vicidoo.org/tags/OneBot/</loc>
+    <loc>https://vicidoo.org/tags/Hermes/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -61,7 +61,14 @@
   </url>
   
   <url>
-    <loc>https://vicidoo.org/tags/Hermes/</loc>
+    <loc>https://vicidoo.org/tags/%E7%99%BD%E5%B9%BB/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vicidoo.org/tags/OneBot/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
