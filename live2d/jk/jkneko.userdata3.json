@@ -1,0 +1,149 @@
+{
+	"Version": 3,
+	"Meta": {
+		"UserDataCount": 28,
+		"TotalUserDataSize": 700
+	},
+	"UserData": [
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh134",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh135",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh136",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh137",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh138",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh139",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh140",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh146",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh147",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh149",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh150",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh141",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh195",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh198",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh342",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh258",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh257",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh254",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh253",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh248",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh247",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh246",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh226",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh224",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh223",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh205",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh204",
+			"Value": "vts_ignore_scene_lighting"
+		},
+		{
+			"Target": "ArtMesh",
+			"Id": "ArtMesh203",
+			"Value": "vts_ignore_scene_lighting"
+		}
+	]
+}
