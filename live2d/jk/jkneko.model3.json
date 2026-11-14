@@ -1,0 +1,91 @@
+{
+ "Version": 3,
+ "FileReferences": {
+  "Moc": "jkneko.moc3",
+  "Textures": [
+   "tex/texture_00.png",
+   "tex/texture_01.png"
+  ],
+  "Physics": "jkneko.physics3.json",
+  "UserData": "jkneko.userdata3.json",
+  "DisplayInfo": "jkneko.cdi3.json",
+  "Expressions": [
+   {
+    "Name": "angry",
+    "File": "exp_angry.exp3.json"
+   },
+   {
+    "Name": "heart",
+    "File": "exp_heart.exp3.json"
+   },
+   {
+    "Name": "star",
+    "File": "exp_star.exp3.json"
+   },
+   {
+    "Name": "cry",
+    "File": "exp_cry.exp3.json"
+   },
+   {
+    "Name": "tear",
+    "File": "exp_tear.exp3.json"
+   },
+   {
+    "Name": "dead",
+    "File": "exp_dead.exp3.json"
+   },
+   {
+    "Name": "sweat",
+    "File": "exp_sweat.exp3.json"
+   },
+   {
+    "Name": "blush",
+    "File": "exp_blush.exp3.json"
+   },
+   {
+    "Name": "dark",
+    "File": "exp_dark.exp3.json"
+   },
+   {
+    "Name": "tongue",
+    "File": "exp_tongue.exp3.json"
+   },
+   {
+    "Name": "glasses",
+    "File": "exp_glasses.exp3.json"
+   },
+   {
+    "Name": "pinkL",
+    "File": "exp_pinkL.exp3.json"
+   },
+   {
+    "Name": "pinkR",
+    "File": "exp_pinkR.exp3.json"
+   }
+  ],
+  "Motions": {
+   "Idle": [
+    {
+     "File": "idle.motion3.json",
+     "FadeInTime": 1,
+     "FadeOutTime": 1
+    }
+   ]
+  }
+ },
+ "Groups": [
+  {
+   "Target": "Parameter",
+   "Name": "LipSync",
+   "Ids": []
+  },
+  {
+   "Target": "Parameter",
+   "Name": "EyeBlink",
+   "Ids": [
+    "ParamEyeROpen",
+    "ParamEyeLOpen"
+   ]
+  }
+ ]
+}
